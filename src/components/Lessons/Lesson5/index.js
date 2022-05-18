@@ -35,9 +35,8 @@ const validationSchema = Yup.object({
   )
 });
 
-const onSubmit = (values, actions) => {
+const onSubmit = (values) => {
   console.log("Form data", values);
-  actions.resetForm();
 };
 
 const Lesson4 = () => {

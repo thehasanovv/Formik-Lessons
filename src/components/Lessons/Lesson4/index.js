@@ -34,28 +34,26 @@ const Lesson4 = () => {
       // validateOnChange={false}
       // validateOnBlur={false}
     >
-      {(formik) => {
-        <Form style={{ marginTop: "123px" }}>
-          <div className="form-control">
-            <label htmlFor="name">Name</label>
-            <Field id="name" name="name" type="text" />
-            <ErrorMessage name="name" />
-          </div>
-          <div className="form-control">
-            <label htmlFor="email">E-mail</label>
-            <Field id="email" name="email" type="email" />
-            <ErrorMessage name="email" />
-          </div>
-          <div className="form-control">
-            <label htmlFor="channel">Channel</label>
-            <Field id="channel" name="channel" type="text" />
-            <ErrorMessage name="channel" />
-          </div>
-          <button type="submit" style={{ marginTop: "15px" }}>
-            Submit
-          </button>
-        </Form>;
-      }}
+      <Form style={{ marginTop: "123px" }}>
+        <div className="form-control">
+          <label htmlFor="name">Name</label>
+          <Field id="name" name="name" type="text" />
+          <ErrorMessage name="name" />
+        </div>
+        <div className="form-control">
+          <label htmlFor="email">E-mail</label>
+          <Field id="email" name="email" type="email" />
+          <ErrorMessage name="email" />
+        </div>
+        <div className="form-control">
+          <label htmlFor="channel">Channel</label>
+          <Field id="channel" name="channel" type="text" />
+          <ErrorMessage name="channel" />
+        </div>
+        <button type="submit" style={{ marginTop: "15px" }}>
+          Submit
+        </button>
+      </Form>
     </Formik>
   );
 };

@@ -41,6 +41,8 @@ const validateComments = (value) => {
 const onSubmit = (values, actions) => {
   console.log("Form data", values);
   actions.resetForm();
+  // This is Demo -  For real use api response back
+  actions.setSubmitting(false);
 };
 
 const Lesson6 = () => {
@@ -49,6 +51,7 @@ const Lesson6 = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}
+      validateOnMount
     >
       {(formik) => {
         console.log(formik);
@@ -106,7 +109,12 @@ const Lesson6 = () => {
                   <div className="error">{formik.errors.social.twitter}</div>
                 )}
             </div>
-            <button type="submit">Submit</button>
+            <button
+              type="submit"
+              disabled={!formik.isValid || formik.isSubmitting}
+            >
+              Submit
+            </button>
           </Form>
         );
       }}

@@ -14,13 +14,13 @@
 ## Lesson 3
 * Using getFieldProps
 * Improving validation
+* validateOnChange & validateOnBlur
 
 ## Lesson 4
 * Formik component
 * Field component
 * Form component
 * Error message component
-* validateOnChange & validateOnBlur
 
 ## Lesson 5
 * Nested objects
@@ -30,6 +30,8 @@
 ## Lesson 6
 * Manually trigering validation
 * Custom validate
+* validateOnMount
+* isValid
+* isSubmitting & setSubmitting
 
-
-
+# Reusible Formik (bonus)
