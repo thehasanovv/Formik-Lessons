@@ -34,4 +34,4 @@
 * isValid
 * isSubmitting & setSubmitting
 
-# Reusible Formik (bonus)
+## Reusible Formik (bonus)
